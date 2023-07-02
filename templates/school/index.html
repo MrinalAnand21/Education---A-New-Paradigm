@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/4186023.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+
+
+
+    .glow {
+      font-size: 90px;
+      color: #ffffff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+  </style>
+
+</head>
+
+<body>
+  {% include "school/navbar.html" %}
+  <br>
+  <br>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <br><br>
+    <h3 style="font-family: Century Gothic" class="display-4 glow"><b><u>Education: A
+          New
+          Paradigm </u></b></h3>
+    <br>
+    <br>
+    <h5 class="text-center" style="color:white;">A joyful, holistic and engaging schooling education platform </h5>
+    <h5 class="text-center" style="color:white;">to increase the positive emotions and engagement</h5>
+    <h5 class="text-center" style="color:white;">between Teacher and Student</h5>
+    <br>
+    <p class="lead">
+      <a style="font-family: Century Gothic" class="btn btn-danger btn-lg" href="/studentsignup" role="button">Sign Up
+        as Student</a>
+    </p>
+    <br><br>
+  </div>
+
+  <br>
+  <br>
+  <br><br>
+
+  {% include "school/admin_teacher_student_card.html" %}
+
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  {% include "school/footer.html" %}
+</body>
+
+</html>
